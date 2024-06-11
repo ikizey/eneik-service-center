@@ -3,10 +3,722 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap" />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Title</title>
   </head>
   <body>
-    <div class="wrapper">Hello!</div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__left">
+            <div class="header__logo">
+              <img src="img/Eneik_dark.svg" alt="Eneik logo" />
+            </div>
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="btn btn-red item_selected">
+                  <a href="#" class="menu__link">Services</a>
+                </li>
+                <li class="btn btn-grey">
+                  <a href="#" class="menu__link">About&nbsp;us</a>
+                </li>
+                <li class="btn btn-grey">
+                  <a href="#" class="menu__link">Prices</a>
+                </li>
+                <li class="btn btn-grey">
+                  <a href="#" class="menu__link">Breakdowns</a>
+                </li>
+                <li class="btn btn-grey">
+                  <a href="#" class="menu__link">Testimonials</a>
+                </li>
+                <li class="btn btn-grey">
+                  <a href="#" class="menu__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__right">
+            <div class="button__list">
+              <div class="button__item">
+                <div class="button__button">EN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="cover _container">
+        <div class="cover__text">
+          <div class="text__body">
+            <div class="text__block">
+              <p class="text__top">The best service center in Your Coworking Hub!</p>
+              <p class="text__bottom">
+                Your trusted destination for fast, reliable repairs on all electronic devices. Our skilled technicians
+                ensure your gadgets are restored to optimal performance with precision and care
+              </p>
+            </div>
+            <button class="btn btn-red mt-50">Request a call</button>
+          </div>
+          <ul class="text__contacts mt-100">
+            <li>
+              <a href="#" class="contacts__item">
+                <img src="img/contacts_icons/mail.svg" alt="email" class="contact__icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="contacts__item">
+                <img src="img/contacts_icons/phone.svg" alt="phone" class="contact__icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="contacts__item">
+                <img src="img/contacts_icons/telegram.svg" alt="telegram" class="contact__icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="contacts__item">
+                <img src="img/contacts_icons/instagram.svg" alt="instagram" class="contact__icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cover__image">
+          <img src="img/cover.png" alt="cover image" />
+          <p class="image__toptext">TOP FLOOR TOP SERVICE</p>
+          <p class="image__bottomtext">33 Jacob Gogebashvili</p>
+        </div>
+      </section>
+
+      <section class="down__button _container mt-50">
+        <img src="img/arrow-down.svg" alt="scroll down" />
+      </section>
+
+      <section class="advantages _container">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__title">24 hours</p>
+            <p class="advantages__description">most repairs are completed within 24 hours</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title">Free</p>
+            <p class="advantages__description">free diagnostic before any repairs</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title">90 days</p>
+            <p class="advantages__description">90-day warranty for your peace of mind</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title">Quality</p>
+            <p class="advantages__description">only high-quality parts for all repairs</p>
+          </li>
+        </ul>
+      </section>
+
+      <main class="services _container mt-250">
+        <div class="section-name">Our Services</div>
+        <div class="services__body">
+          <ul class="services__list">
+            <li>
+              <a href="#" class="services__service">
+                <img src="img/services/prevention.png" alt="prevention" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">Prevention</div>
+                  <div class="service__arrow_container">
+                    <img src="/img/arrow-topright.svg" alt="prevention link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__service selected_service">
+                <img src="img/services/pc_laptiops.png" alt="pc and laptops" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">PC & laptops</div>
+                  <div class="service__arrow_container_active">
+                    <img src="/img/arrow-right.svg" alt="pc and laptops link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__service">
+                <img src="img/services/phones.png" alt="phones" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">Phones</div>
+                  <div class="service__arrow_container">
+                    <img src="/img/arrow-topright.svg" alt="phones link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__service">
+                <img src="img/services/tablets.png" alt="tablets" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">Tables</div>
+                  <div class="service__arrow_container">
+                    <img src="/img/arrow-topright.svg" alt="tablets link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__service">
+                <img src="img/services/consoles.png" alt="gaming consoles" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">Gaming consoles</div>
+                  <div class="service__arrow_container">
+                    <img src="/img/arrow-topright.svg" alt="gaming consoles link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__service">
+                <img src="img/services/office.png" alt="office equipment" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">Office equipment</div>
+                  <div class="service__arrow_container">
+                    <img src="/img/arrow-topright.svg" alt="office equipment link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__service">
+                <img src="img/services/monitors.png" alt="monitors" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">Monitors</div>
+                  <div class="service__arrow_container">
+                    <img src="/img/arrow-topright.svg" alt="monitors link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="services__service">
+                <img src="img/services/headphones.png" alt="headphones" class="service__image" />
+                <div class="service__title">
+                  <div class="service__title_name">Headphones</div>
+                  <div class="service__arrow_container">
+                    <img src="/img/arrow-topright.svg" alt="headphones link" class="service__arrow" />
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="services__active_service">
+            <img src="img/services/pc_laptiops_big.png" alt="pc and laptops" class="active_service__image" />
+
+            <div class="active_service__description_container">
+              <div class="_rows">
+                <div class="active_service__description">
+                  <p class="active_service__name">Laptops and computers</p>
+                  <p class="active_service__short_description">Passionately providing top device care</p>
+                  <p class="active_service__long_description">
+                    Our team is dedicated to providing the best care for your laptops and PCs, whether you're facing
+                    slow performance, unexpected crashes, or hardware malfunctions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="active_service__frequent_breakage">
+                <p class="frequent_breakage_list__title">What is included?</p>
+                <ul class="active_service__frequent_breakage_list">
+                  <li class="frequent_breakage_list__item">
+                    <div class="frequent_breakage_item__icon">
+                      <img src="img/icon-diagnostics.svg" alt="diagnostics" />
+                    </div>
+                    <div class="frequent_breakage_item__description">
+                      <p class="frequent_breakage_item__title">Diagnostics</p>
+                      <p class="frequent_breakage_item_text">Identifying hardware and software issues</p>
+                    </div>
+                  </li>
+                  <li class="frequent_breakage_list__item">
+                    <div class="frequent_breakage_item__icon">
+                      <img src="img/icon-repair.svg" alt="repair services" />
+                    </div>
+                    <div class="frequent_breakage_item__description">
+                      <p class="frequent_breakage_item__title">Repair services</p>
+                      <p class="frequent_breakage_item_text">Fixing or replacing faulty laptop components</p>
+                    </div>
+                  </li>
+                  <li class="frequent_breakage_list__item">
+                    <div class="frequent_breakage_item__icon">
+                      <img src="img/icon-maintanamnce.svg" alt="preventive maintenance" />
+                    </div>
+                    <div class="frequent_breakage_item__description">
+                      <p class="frequent_breakage_item__title">Preventive Maintenance</p>
+                      <p class="frequent_breakage_item_text">Cleaning and maintenance to prevent future issues</p>
+                    </div>
+                  </li>
+                  <li class="frequent_breakage_list__item">
+                    <div class="frequent_breakage_item__icon">
+                      <img src="img/icon-support.svg" alt="customer support" />
+                    </div>
+                    <div class="frequent_breakage_item__description">
+                      <p class="frequent_breakage_item__title">Customer Support</p>
+                      <p class="frequent_breakage_item_text">Providing advice on usage and maintenance</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <form class="call_to_action_form mt-130 mb-60">
+                <input type="text" class="call_to_action__phone" name="phone" />
+                <button class="services__cta_button btn btn-red" action="">Request a call</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="aboutus _container">
+        <div class="aboutus__top">
+          <h2 class="section-name">About us</h2>
+          <p class="aboutus__description">
+            We are passionate about delivering exceptional service and quality products. Our team of dedicated
+            professionals works tirelessly to exceed customer expectations and drive innovation in everything we do
+          </p>
+        </div>
+
+        <div class="aboutus__bottom">
+          <div class="aboutus__accordion">
+            <ul class="aboutus__list">
+              <li class="aboutus__item accordion_open">
+                <div class="aboutus__item_header">
+                  <div class="aboutus__item_title">
+                    <div class="aboutus__item_icon">
+                      <img src="img/cert.svg" alt="certified" />
+                    </div>
+                    <p class="aboutus__item_name">Certified Technicians</p>
+                  </div>
+                  <div class="aboutus__item_arrow">
+                    <img src="img/chevron-up.svg" alt="" />
+                  </div>
+                </div>
+                <div class="aboutus__item_text">
+                  Our technicians are highly trained and certified professionals with years of experience in repairing a
+                  wide range of gadgets. They undergo rigorous training and stay updated with the latest industry
+                  standards to ensure that your devices are in the best hands.
+                </div>
+              </li>
+              <li class="aboutus__item">
+                <div class="aboutus__item_header">
+                  <div class="aboutus__item_title">
+                    <div class="aboutus__item_icon">
+                      <img src="img/icon-hourglass.svg" alt="waiting area" />
+                    </div>
+                    <p class="aboutus__item_name">Waiting area</p>
+                  </div>
+                  <div class="aboutus__item_arrow">
+                    <img src="img/chevron-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="aboutus__item_text hidden">
+                  Our technicians are highly trained and certified professionals with years of experience in repairing a
+                  wide range of gadgets. They undergo rigorous training and stay updated with the latest industry
+                  standards to ensure that your devices are in the best hands.
+                </div>
+              </li>
+              <li class="aboutus__item">
+                <div class="aboutus__item_header">
+                  <div class="aboutus__item_title">
+                    <div class="aboutus__item_icon">
+                      <img src="img/icon-users.svg" alt="community workshops" />
+                    </div>
+                    <p class="aboutus__item_name">Community Workshops</p>
+                  </div>
+                  <div class="aboutus__item_arrow">
+                    <img src="img/chevron-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="aboutus__item_text hidden">
+                  Our technicians are highly trained and certified professionals with years of experience in repairing a
+                  wide range of gadgets. They undergo rigorous training and stay updated with the latest industry
+                  standards to ensure that your devices are in the best hands.
+                </div>
+              </li>
+              <li class="aboutus__item">
+                <div class="aboutus__item_header">
+                  <div class="aboutus__item_title">
+                    <div class="aboutus__item_icon">
+                      <img src="img/icon-checkshield.svg" alt="data protection guarantee" />
+                    </div>
+                    <p class="aboutus__item_name">Data Protection Guarantee</p>
+                  </div>
+                  <div class="aboutus__item_arrow">
+                    <img src="img/chevron-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="aboutus__item_text hidden">
+                  Our technicians are highly trained and certified professionals with years of experience in repairing a
+                  wide range of gadgets. They undergo rigorous training and stay updated with the latest industry
+                  standards to ensure that your devices are in the best hands.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="aboutus__image">
+            <img src="img/aboutus.png" alt="about us" />
+          </div>
+        </div>
+      </section>
+
+      <section class="prices _container mt-250">
+        <div class="prices__header">
+          <div class="prices__title">
+            <h2 class="section-name">Our Service Rates</h2>
+            <button class="btn btn-red">Request a call</button>
+          </div>
+        </div>
+
+        <ul class="prices__list">
+          <li class="prices__item">
+            <div class="prices__item_header">
+              <div class="prices__item_title">
+                <div class="prices__item_icon">
+                  <img src="img/icon-computer.svg" alt="computers" />
+                </div>
+                <p class="prices__item_name name">Computers</p>
+              </div>
+              <div class="prices_item_arrow">
+                <img src="img/chevron-down.svg" alt="" />
+              </div>
+            </div>
+            <div class="prices__item_text hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis, suscipit atque, autem optio
+              fuga eius non velit nam aliquam sint libero nemo! Mollitia aut illum velit facere, voluptatem minus.
+            </div>
+          </li>
+          <li class="prices__item">
+            <div class="prices__item_header">
+              <div class="prices__item_title">
+                <div class="prices__item_icon">
+                  <img src="img/icon-phones.svg" alt="phones" />
+                </div>
+                <p class="prices__item_name name">Phones</p>
+              </div>
+              <div class="prices_item_arrow">
+                <img src="img/chevron-down.svg" alt="" />
+              </div>
+            </div>
+            <div class="prices__item_text hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis, suscipit atque, autem optio
+              fuga eius non velit nam aliquam sint libero nemo! Mollitia aut illum velit facere, voluptatem minus.
+            </div>
+          </li>
+          <li class="prices__item">
+            <div class="prices__item_header">
+              <div class="prices__item_title">
+                <div class="prices__item_icon">
+                  <img src="img/icon-tablet.svg" alt="tablets" />
+                </div>
+                <p class="prices__item_name name">Tablets</p>
+              </div>
+              <div class="prices_item_arrow">
+                <img src="img/chevron-down.svg" alt="" />
+              </div>
+            </div>
+            <div class="prices__item_text hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis, suscipit atque, autem optio
+              fuga eius non velit nam aliquam sint libero nemo! Mollitia aut illum velit facere, voluptatem minus.
+            </div>
+          </li>
+          <li class="prices__item">
+            <div class="prices__item_header">
+              <div class="prices__item_title">
+                <div class="prices__item_icon">
+                  <img src="img/icon-monitor.svg" alt="monitors" />
+                </div>
+                <p class="prices__item_name name">Monitors</p>
+              </div>
+              <div class="prices_item_arrow">
+                <img src="img/chevron-down.svg" alt="" />
+              </div>
+            </div>
+            <div class="prices__item_text hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis, suscipit atque, autem optio
+              fuga eius non velit nam aliquam sint libero nemo! Mollitia aut illum velit facere, voluptatem minus.
+            </div>
+          </li>
+          <li class="prices__item">
+            <div class="prices__item_header">
+              <div class="prices__item_title">
+                <div class="prices__item_icon">
+                  <img src="img/icon-headphones.svg" alt="headphones" />
+                </div>
+                <p class="prices__item_name name">headphones</p>
+              </div>
+              <div class="prices_item_arrow">
+                <img src="img/chevron-down.svg" alt="" />
+              </div>
+            </div>
+            <div class="prices__item_text hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis, suscipit atque, autem optio
+              fuga eius non velit nam aliquam sint libero nemo! Mollitia aut illum velit facere, voluptatem minus.
+            </div>
+          </li>
+        </ul>
+
+        <div class="prices__more down__button">
+          <img src="img/arrow-down.svg" alt="scroll down" />
+        </div>
+      </section>
+
+      <section class="frequent_breakdowns _container mt-250 overflow-x">
+        <div class="frequent_breakdowns__header">
+          <h2 class="section-name">Frequent Breakdowns</h2>
+          <ul class="frequent_breakdowns__tabs">
+            <li class="btn btn-small">Phones</li>
+            <li class="btn btn-small btn-dark">Laptops</li>
+            <li class="btn btn-small">Tablets</li>
+            <li class="btn btn-small">Gaming Consoles</li>
+            <li class="btn btn-small">Office Equipment</li>
+            <li class="btn btn-small">Monitors</li>
+          </ul>
+        </div>
+        <ul class="frequent_breakdowns__list">
+          <li class="frequent_breakdowns__item">
+            <div class="icon icon-grey">
+              <img src="img/icon-sleep.svg" alt="slow performance" />
+            </div>
+            <p class="frequent_breakdowns__name">Slow Performance</p>
+            <p class="frequent_breakdowns__description">
+              A device operates sluggishly, taking longer than usual to open applications and complete tasks
+            </p>
+            <p class="frequent_breakdowns__price">From 50 GEL</p>
+          </li>
+          <li class="frequent_breakdowns__item">
+            <div class="icon icon-grey">
+              <img src="img/icon-drive.svg" alt="hard drives failures" />
+            </div>
+            <p class="frequent_breakdowns__name">Hard Drive Failures</p>
+            <p class="frequent_breakdowns__description">
+              The hard drive malfunctions, leading to data loss, inaccessible files, or the inability to boot up your
+              computer
+            </p>
+            <p class="frequent_breakdowns__price">From 70 GEL</p>
+          </li>
+          <li class="frequent_breakdowns__item">
+            <div class="icon icon-grey">
+              <img src="img/icon-temp.svg" alt="Overheating issues" />
+            </div>
+            <p class="frequent_breakdowns__name">Overheating Issues</p>
+            <p class="frequent_breakdowns__description">
+              A device gets excessively hot, which can cause it to shut down unexpectedly or damage internal components
+            </p>
+            <p class="frequent_breakdowns__price">From 100 GEL</p>
+          </li>
+          <li class="frequent_breakdowns__item">
+            <div class="icon icon-grey">
+              <img src="img/icon-support-light.svg" alt="software corruptions" />
+            </div>
+            <p class="frequent_breakdowns__name">Software Corruptions</p>
+            <p class="frequent_breakdowns__description">
+              Essential software on your device becomes damaged or compromised, causing errors, crashes, or
+              functionality loss
+            </p>
+            <p class="frequent_breakdowns__price">From 50 GEL</p>
+          </li>
+          <li class="frequent_breakdowns__item">
+            <div class="icon icon-grey">
+              <img src="img/icon-xmonitor.svg" alt="screen damage" />
+            </div>
+            <p class="frequent_breakdowns__name">Screen Damage</p>
+            <p class="frequent_breakdowns__description">
+              Cracked, flickering, or unresponsive screen, or issues with the display backlight
+            </p>
+            <p class="frequent_breakdowns__price">From 50 GEL</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="testimonials _container mt-250 bg-dark font-light">
+        <div class="testimonials__body">
+          <div class="testimonials__title">
+            <h2 class="section-name font-light text-center">Hear from Our Customers about us</h2>
+            <p class="testimonials__description text-center">
+              We greatly value the feedback of our clients and take pride in sharing their experiences. Hearing directly
+              from those who have benefited from our services allows us to continuously improve and maintain the high
+              standards that we strive for
+            </p>
+          </div>
+          <ul class="testimonials__list">
+            <li class="testimonials__testimonial">
+              <p class="testimonial__text">
+                Eneik Service Center saved me when my tablet stopped working right before a big trip. They diagnosed and
+                fixed the issue quickly, and their prices were very fair. I'll definitely be returning for any future
+                repairs.
+              </p>
+              <div class="testimonial__footer">
+                <div class="testimonial__user">
+                  <div class="testimonial__user_avatar"></div>
+                  <p class="testimonial__user_name">Emily K.</p>
+                </div>
+                <div class="testimonial__rating">
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                </div>
+              </div>
+            </li>
+            <div class="testimonials__controls">
+              <div class="icon icon-dark">
+                <img src="img/icon-left.svg" alt="previous" />
+              </div>
+              <ul class="testimonials__navigation_list">
+                <li class="testimonials__navigation_item">
+                  <img src="img/icon-circle-full.svg" alt="" />
+                </li>
+                <li class="testimonials__navigation_item">
+                  <img src="img/icon-circle.svg" alt="" />
+                </li>
+                <li class="testimonials__navigation_item">
+                  <img src="img/icon-circle.svg" alt="" />
+                </li>
+                <li class="testimonials__navigation_item">
+                  <img src="img/icon-circle.svg" alt="" />
+                </li>
+              </ul>
+              <div class="icon icon-dark">
+                <img src="img/Icon-right.svg" alt="next" />
+              </div>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <section class="gallery _container mt-250">
+        <div class="gallery__header">
+          <h2 class="section-name gallery-name">Explore our coworking!</h2>
+          <img src="img/Eneilk-light.svg" alt="Eneik logo" class="logo-sm" />
+        </div>
+        <div class="gallery__photos">
+          <img class="gallery__photo1" src="img/gallery/Img1.png" alt="photo of Emeik coworking" />
+          <img class="gallery__photo2" src="img/gallery/Img2.png" alt="photo of Emeik coworking" />
+          <img class="gallery__photo3" src="img/gallery/Img3.png" alt="photo of Emeik coworking" />
+          <img class="gallery__photo4" src="img/gallery/Img4.png" alt="photo of Emeik coworking" />
+          <img class="gallery__photo5" src="img/gallery/Img5.png" alt="photo of Emeik coworking" />
+        </div>
+      </section>
+
+      <section class="contacts _container mt-250 bg-dark font-light">
+        <img src="img/map.png" class="map" alt="map to Eneik coworking - 33 Jacob Gogebashvili Street" />
+        <div class="contacts__body">
+          <div class="section-name section-name-lg font-light">Contacts</div>
+          <ul class="contacts__contact">
+            <li class="contact">
+              <p class="contact__text">Phone</p>
+              <p class="contact__text">+995 555 67-32-12</p>
+            </li>
+            <li class="contact">
+              <p class="contact__text">Email</p>
+              <p class="contact__text">example@gmail.com</p>
+            </li>
+            <li class="contact">
+              <p class="contact__text">Address</p>
+              <p class="contact__text">33 Jacob Gogebashvili Street</p>
+            </li>
+            <li class="contact">
+              <p class="contact__text">Telegram</p>
+              <p class="contact__text">@Kutaisi_Eneik</p>
+            </li>
+          </ul>
+          <form class="contacts__cta_form" action="#">
+            <p>Need assistance?</p>
+            <p>Our professionals are here to help. Schedule your call today!</p>
+            <div class="call_to_action_form mt-16">
+              <input type="text" class="call_to_action__phone" name="phone" />
+              <button class="services__cta_button btn btn-red" action="">Request a call</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer _container mt-250 mb-40">
+        <div class="footer__info">
+          <div class="footer__title">
+            <img src="img/Eneik_dark.svg" alt="Eneik logo" />
+            <p class="footer__eneik_description">The best service center in Kutaisi</p>
+          </div>
+          <ul class="text__contacts">
+            <li>
+              <a href="#" class="icon icon-grey">
+                <img src="img/contacts_icons/mail-light.svg" alt="email" class="contact__icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon icon-grey">
+                <img src="img/contacts_icons/phone-light.svg" alt="phone" class="contact__icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon icon-grey">
+                <img src="img/contacts_icons/telegram-ligth.svg" alt="telegram" class="contact__icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon icon-grey">
+                <img src="img/contacts_icons/instagram-light.svg" alt="instagram" class="contact__icon" />
+              </a>
+            </li>
+          </ul>
+
+          <p class="copy-right">@2024. All rights reserved</p>
+        </div>
+
+        <div class="footer__menu">
+          <ul class="footer__navigation">
+            <li class="footer__navigaton_item">
+              <a href="#">Service</a>
+            </li>
+            <li>
+              <a class="block" href="#">About&nbsp;us</a>
+            </li>
+            <li>
+              <a class="block" href="#">Prices</a>
+            </li>
+            <li>
+              <a class="block" href="#">Breakdowns</a>
+            </li>
+            <li>
+              <a class="block" href="#">Testimonials</a>
+            </li>
+            <li>
+              <a class="block" href="#">Contacts</a>
+            </li>
+          </ul>
+          <div class="footer__lang_and_link">
+            <ul class="footer__languages">
+              <li class="btn btn-dark">En</li>
+              <li class="btn btn-grey">Rus</li>
+              <li class="btn btn-grey">Geo</li>
+            </ul>
+            <div class="footer__coworking">
+              <img class="coworking__logo" src="img/cowoking_logo.png" alt="" />
+              <a href="" class="coworking__link">
+                <p class="coworking__text">Check out our coworking space</p>
+                <div class="btn btn-round btn-dark">
+                  <img src="img/icon-arrow-topright.svg" alt="scroll down" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
