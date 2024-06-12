@@ -32,7 +32,7 @@ h6 {
 body {
   height: 100%;
   color: #000;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -73,7 +73,7 @@ body {
   margin-bottom: 60px;
 }
 .section-name {
-  font-family: 'Bai Jamjuree';
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -108,6 +108,15 @@ body {
   color: #ffffff;
   background: #494450;
 }
+.btn-round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
 .icon {
   display: flex;
   align-items: center;
@@ -116,8 +125,25 @@ body {
   height: 56px;
   border-radius: 4px;
 }
+.icon-light {
+  background: #e4e4e4;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+}
+.icon-light > img {
+  width: 24px;
+  height: 24px;
+}
 .icon-grey {
   background: #494450;
+}
+.icon-dark {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 }
 .overflow-x {
   overflow-x: visible;
@@ -129,17 +155,12 @@ body {
 }
 .header__container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 0px;
   height: 64px;
 }
 .header__left {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 .header__logo > img {
   height: 42px;
@@ -161,15 +182,11 @@ body {
 
 .header__right {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 0px;
 }
 .button__list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 0px;
   height: 64px;
   background: #f2f2f2;
@@ -177,47 +194,36 @@ body {
 }
 .button__item {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
   padding: 24px;
   gap: 8px;
 }
 .button__button {
   width: 22px;
   height: 16px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
 }
 
 /* --- cover --- */
 .cover {
   margin-top: 100px;
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between;
-  align-items: start; */
+  gap: 20px;
 }
 .cover__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0px;
 }
 .text__body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
 }
 .text__block {
 }
 .text__top {
-  font-family: 'Bai Jamjuree';
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -227,22 +233,16 @@ body {
 }
 .text__bottom {
   margin-top: 30px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 19px;
   color: #808080;
+  max-width: 594px;
 }
 .text__contacts {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 20px;
 }
 .contacts__item {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 16px;
   background: #f2f2f2;
@@ -254,30 +254,28 @@ body {
   width: 700px;
   height: 654px;
 }
-.image__toptext {
+.cover__image_text {
   position: absolute;
-  top: 0px;
-  right: 0px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 24px 40px;
+  /* padding: 24px 40px; */ /* by design */
+  padding-top: 36px;
+  padding-bottom: 36px;
   gap: 8px;
   background: #f2f2f2;
   border-radius: 50px;
 }
-.image__bottomtext {
-  position: absolute;
+.cover__toptext {
+  top: 0px;
+  right: 0px;
+  width: 45%;
+  text-transform: uppercase;
+}
+.cover__bottomtext {
   bottom: 0px;
   left: 0px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 40px;
-  gap: 8px;
-  background: #f2f2f2;
-  border-radius: 50px;
+  width: 55%;
 }
 
 /* --- down button --- */
@@ -297,7 +295,6 @@ body {
 }
 .advantages__list {
   display: flex;
-  /* justify-content: space-between; */
   align-content: center;
   gap: 20px;
 }
@@ -309,7 +306,7 @@ body {
   border-radius: 16px;
 }
 .advantages__title {
-  font-family: 'Bai Jamjuree';
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -319,7 +316,7 @@ body {
 }
 .advantages__description {
   margin-top: 64px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -359,12 +356,11 @@ body {
 .service__title {
   width: 100%;
   display: flex;
-  flex-direction: row;
   align-content: center;
   justify-content: space-between;
 }
 .service__title_name {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -396,7 +392,7 @@ body {
 .active_service__description {
 }
 .active_service__name {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -405,7 +401,7 @@ body {
   padding-top: 5px;
 }
 .active_service__short_description {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -414,7 +410,7 @@ body {
   padding-top: 5px;
 }
 .active_service__long_description {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -428,7 +424,7 @@ body {
 }
 .frequent_breakage_list__title {
   margin-bottom: 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -436,9 +432,8 @@ body {
   color: #444444;
 }
 .active_service__frequent_breakage_list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .active_service__frequent_breakage_row {
@@ -446,18 +441,13 @@ body {
 }
 .frequent_breakage_list__item {
   display: flex;
-  align-items: flex-start;
-  padding: 0px;
   gap: 20px;
-  flex-grow: 1;
-  /*TODO grid */
 }
 .frequent_breakage_item__icon {
   display: flex;
   align-items: center;
   padding: 16px;
   gap: 8px;
-
   background: #e4e4e4;
   border-radius: 4px;
 }
@@ -470,17 +460,12 @@ body {
   gap: 4px;
 }
 .frequent_breakage_item__title {
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   color: #444444;
 }
 .frequent_breakage_item__text {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #808080;
@@ -491,13 +476,26 @@ body {
 }
 .call_to_action__phone {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 20px 24px;
   gap: 8px;
-  background: #e4e4e4;
+  background-color: #e4e4e4;
+  color: #494450;
   border-radius: 50px;
   flex-grow: 1;
+}
+.call_to_action__phone::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #494450;
+}
+.dark-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #d9d9d9;
+}
+.dark-input::placeholder {
+  line-height: 19px;
+  color: #d9d9d9;
 }
 .services__cta_button {
   display: flex;
@@ -507,10 +505,7 @@ body {
   padding: 20px 48px;
   background: #fe2d29;
   border-radius: 50px;
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
-  font-size: 16px;
   line-height: 19px;
   color: #fff;
 }
@@ -523,10 +518,6 @@ body {
 }
 .aboutus__description {
   margin-top: 24px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 140%;
   color: #808080;
 }
@@ -692,7 +683,7 @@ body {
 }
 .frequent_breakdowns__price {
   margin-top: 133px;
-  font-family: 'Bai Jamjuree';
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -774,6 +765,7 @@ body {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .testimonials__navigation_list {
   display: flex;
@@ -781,12 +773,6 @@ body {
   gap: 4px;
 }
 .testimonials__navigation_item {
-}
-.icon-dark {
-  width: 52px;
-  height: 52px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
 }
 
 /* --- gallery --- */
@@ -839,8 +825,6 @@ body {
 /* --- gallery --- */
 .contacts {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 40px;
   gap: 40px;
   background: #494450;
@@ -889,10 +873,19 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.footer__title {
+.footer__header {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__title > img {
+  width: 154px;
+  height: 42px;
 }
 .footer__eneik_description {
   line-height: 140%;
@@ -945,27 +938,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 8px;
 }
 .coworking__text {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
   color: #444444;
-
   max-width: 236px;
 }
-
-.btn-round {
-  background: #444444;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px;
-}
-.block {
-  display: block;
+.copyright {
+  line-height: 140%;
+  color: #808080;
 }
