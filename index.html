@@ -36,7 +36,7 @@
             <div class="header__logo">
               <img src="img/Eneik_dark.svg" alt="Eneik logo" />
             </div>
-            <nav class="header__menu">
+            <nav class="header__menu hidden-sm">
               <ul class="menu__list">
                 <li class="btn btn-red item_selected">
                   <a href="#" class="menu__link">Services</a>
@@ -60,31 +60,42 @@
             </nav>
           </div>
           <div class="header__right">
-            <div class="button__list">
+            <div class="button__list hidden-sm">
               <div class="button__item">
                 <div class="button__button">EN</div>
               </div>
+            </div>
+            <div class="burger_menu sm-hidden">
+              <img src="img/icon-burger.svg" alt="menu" />
             </div>
           </div>
         </div>
       </header>
 
-      <section class="cover _container">
+      <section class="cover _container mt-100">
         <div class="cover__text">
           <div class="text__body">
             <div class="text__block">
               <h2 class="text__top">
                 The best service center in Your Coworking Hub!
               </h2>
-              <p class="text__bottom">
-                Your trusted destination for fast, reliable repairs on all
-                electronic devices. Our skilled technicians ensure your gadgets
-                are restored to optimal performance with precision and care
-              </p>
+              <div class="text__description">
+                <p class="text__bottom">
+                  Your trusted destination for fast, reliable repairs on all
+                  electronic devices. Our skilled technicians ensure your
+                  gadgets are restored to optimal performance with precision and
+                  care
+                </p>
+                <button class="btn mt-50 btn-rac hidden-sm">
+                  Request a call
+                </button>
+                <button class="btn btn-round btn-cta sm-hidden">
+                  <img src="img/icon-call.svg" alt="" />
+                </button>
+              </div>
             </div>
-            <button class="btn btn-red mt-50">Request a call</button>
           </div>
-          <ul class="text__contacts mt-100">
+          <ul class="text__contacts mt-100 hidden-sm">
             <li>
               <a href="#" class="contacts__item">
                 <img
@@ -137,8 +148,8 @@
         <img src="img/arrow-down.svg" alt="scroll down" />
       </div>
 
-      <div class="advantages _container">
-        <ul class="advantages__list">
+      <div class="advantages _container overflow-x">
+        <ul class="advantages__list overflow-x">
           <li class="advantages__item">
             <p class="advantages__title">24 hours</p>
             <p class="advantages__description">
@@ -208,6 +219,113 @@
                 </div>
               </a>
             </li>
+
+            <li class="grid-2c sm-hidden">
+              <div class="services__active_service">
+                <div class="active_service__description_container">
+                  <div class="active_service__top">
+                    <div class="active_service__description">
+                      <p class="active_service__name">Laptops and computers</p>
+                      <p class="active_service__short_description">
+                        Passionately providing top device care
+                      </p>
+                      <p class="active_service__long_description">
+                        Our team is dedicated to providing the best care for
+                        your laptops and PCs, whether you're facing slow
+                        performance, unexpected crashes, or hardware
+                        malfunctions.
+                      </p>
+                    </div>
+
+                    <div class="active_service__frequent_breakage">
+                      <p class="frequent_breakage_list__title">
+                        What is included?
+                      </p>
+                      <ul class="active_service__frequent_breakage_list">
+                        <li class="frequent_breakage_list__item">
+                          <div class="icon icon-light">
+                            <img
+                              src="img/icon-diagnostics.svg"
+                              alt="diagnostics"
+                            />
+                          </div>
+                          <div class="frequent_breakage_item__description">
+                            <p class="frequent_breakage_item__title">
+                              Diagnostics
+                            </p>
+                            <p class="frequent_breakage_item__text">
+                              Identifying hardware and software issues
+                            </p>
+                          </div>
+                        </li>
+                        <li class="frequent_breakage_list__item">
+                          <div class="icon icon-light">
+                            <img
+                              src="img/icon-repair.svg"
+                              alt="repair services"
+                            />
+                          </div>
+                          <div class="frequent_breakage_item__description">
+                            <p class="frequent_breakage_item__title">
+                              Repair services
+                            </p>
+                            <p class="frequent_breakage_item__text">
+                              Fixing or replacing faulty laptop components
+                            </p>
+                          </div>
+                        </li>
+                        <li class="frequent_breakage_list__item">
+                          <div class="icon icon-light">
+                            <img
+                              src="img/icon-maintanamnce.svg"
+                              alt="preventive maintenance"
+                            />
+                          </div>
+                          <div class="frequent_breakage_item__description">
+                            <p class="frequent_breakage_item__title">
+                              Preventive Maintenance
+                            </p>
+                            <p class="frequent_breakage_item__text">
+                              Cleaning and maintenance to prevent future issues
+                            </p>
+                          </div>
+                        </li>
+                        <li class="frequent_breakage_list__item">
+                          <div class="icon icon-light">
+                            <img
+                              src="img/icon-support.svg"
+                              alt="customer support"
+                            />
+                          </div>
+                          <div class="frequent_breakage_item__description">
+                            <p class="frequent_breakage_item__title">
+                              Customer Support
+                            </p>
+                            <p class="frequent_breakage_item__text">
+                              Providing advice on usage and maintenance
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <form class="call_to_action_form services__cta_form">
+                    <input
+                      type="text"
+                      class="call_to_action__phone"
+                      name="phone"
+                      placeholder="Your phone number"
+                    />
+
+                    <button class="btn btn-round btn-cta-big sm-hidden">
+                      <img src="img/icon-call.svg" alt="" />
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </li>
+
             <li>
               <a href="#" class="services__service">
                 <img
@@ -324,7 +442,7 @@
             </li>
           </ul>
 
-          <div class="services__active_service">
+          <div class="services__active_service hidden-sm">
             <img
               src="img/services/pc_laptiops_big.png"
               alt="pc and laptops"
@@ -644,7 +762,7 @@
       <section class="frequent_breakdowns _container mt-250 overflow-x">
         <div class="frequent_breakdowns__header">
           <h2 class="section-name">Frequent Breakdowns</h2>
-          <ul class="frequent_breakdowns__tabs">
+          <ul class="frequent_breakdowns__tabs hidden-sm">
             <li class="btn btn-small">Phones</li>
             <li class="btn btn-small btn-dark">Laptops</li>
             <li class="btn btn-small">Tablets</li>
@@ -652,6 +770,10 @@
             <li class="btn btn-small">Office Equipment</li>
             <li class="btn btn-small">Monitors</li>
           </ul>
+          <div class="frequent_breakdowns__select sm-hidden">
+            <p class="frequent_breakdowns__option">Laptops</p>
+            <img src="/img/chevron-down.svg" alt="" />
+          </div>
         </div>
         <ul class="frequent_breakdowns__list">
           <li class="frequent_breakdowns__item">
@@ -791,27 +913,28 @@
       </section>
 
       <section class="contacts _container mt-250 bg-dark font-light">
-        <div class="contacts__map"></div>
+        <div class="contacts__map hidden-sm"></div>
         <div class="contacts__body">
           <h2 class="section-name section-name-lg font-light">Contacts</h2>
           <ul class="contacts__contact">
             <li class="contact">
               <p class="contact__text">Phone</p>
-              <p class="contact__text">+995 555 67-32-12</p>
+              <p class="contact__text--bold">+995 555 67-32-12</p>
             </li>
             <li class="contact">
               <p class="contact__text">Email</p>
-              <p class="contact__text">example@gmail.com</p>
+              <p class="contact__text--bold">example@gmail.com</p>
             </li>
             <li class="contact">
               <p class="contact__text">Address</p>
-              <p class="contact__text">33 Jacob Gogebashvili Street</p>
+              <p class="contact__text--bold">33 Jacob Gogebashvili Street</p>
             </li>
             <li class="contact">
               <p class="contact__text">Telegram</p>
-              <p class="contact__text">@Kutaisi_Eneik</p>
+              <p class="contact__text--bold">@Kutaisi_Eneik</p>
             </li>
           </ul>
+          <div class="contacts__map sm-hidden"></div>
           <form class="contacts__cta_form" action="#">
             <p>Need assistance?</p>
             <p>Our professionals are here to help. Schedule your call today!</p>
@@ -822,8 +945,13 @@
                 name="phone"
                 placeholder="Your phone number"
               />
-              <button class="services__cta_button btn btn-red">
+              <button class="services__cta_button btn btn-red hidden-sm">
                 Request a call
+              </button>
+              <button
+                class="btn btn-round btn-cta contacts_cta_button sm-hidden"
+              >
+                <img src="img/icon-call.svg" alt="" />
               </button>
             </div>
           </form>
@@ -839,7 +967,7 @@
                 The best service center in Kutaisi
               </p>
             </div>
-            <ul class="text__contacts">
+            <ul class="text__contacts hidden-sm">
               <li>
                 <a href="#" class="icon icon-grey">
                   <img
@@ -878,8 +1006,14 @@
               </li>
             </ul>
           </div>
-          <p class="copyright">@2024. All rights reserved</p>
+          <p class="copyright hidden-sm">@2024. All rights reserved</p>
         </div>
+
+        <ul class="footer__languages sm-hidden">
+          <li class="btn btn-dark btn-lang">En</li>
+          <li class="btn btn-grey btn-lang">Rus</li>
+          <li class="btn btn-grey btn-lang">Geo</li>
+        </ul>
 
         <div class="footer__menu">
           <ul class="footer__navigation">
@@ -902,7 +1036,7 @@
               <a href="#">Contacts</a>
             </li>
           </ul>
-          <div class="footer__lang_and_link">
+          <div class="footer__lang_and_link hidden-sm">
             <ul class="footer__languages">
               <li class="btn btn-dark btn-lang">En</li>
               <li class="btn btn-grey btn-lang">Rus</li>
@@ -919,6 +1053,18 @@
             </div>
           </div>
         </div>
+        <div class="footer__lang_and_link sm-hidden">
+          <div class="footer__coworking">
+            <img class="coworking__logo" src="img/cowoking_logo.png" alt="" />
+            <a href="" class="coworking__link">
+              <p class="coworking__text">Check out our coworking space</p>
+              <div class="btn btn-round btn-dark">
+                <img src="img/icon-arrow-topright.svg" alt="scroll down" />
+              </div>
+            </a>
+          </div>
+        </div>
+        <p class="copyright sm-hidden">@2024. All rights reserved</p>
       </footer>
     </div>
   </body>
