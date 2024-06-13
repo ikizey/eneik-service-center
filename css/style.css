@@ -160,6 +160,13 @@ body {
     flex-shrink: 0;
   }
 }
+@media (max-width: 390px) {
+  .btn-cta {
+    padding: 20px;
+    min-width: 60px;
+    min-height: 60px;
+  }
+}
 .btn-small {
   padding: 12px 24px;
   background: #f2f2f2;
@@ -325,6 +332,11 @@ body {
     gap: 20px;
   }
 }
+@media (max-width: 390px) {
+  .text__description {
+    align-items: flex-end;
+  }
+}
 .text__bottom {
   line-height: 19px;
   color: #808080;
@@ -373,6 +385,12 @@ body {
     height: 576px;
   }
 }
+@media (max-width: 390px) {
+  .cover__image {
+    width: 358px;
+    height: 376px;
+  }
+}
 
 .cover__image_text {
   position: absolute;
@@ -386,16 +404,46 @@ body {
   background: #f2f2f2;
   border-radius: 50px;
 }
+@media (max-width: 768px) {
+  .cover__image_text {
+    font-family: "Bai Jamjuree";
+    font-style: normal;
+    font-size: 17px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media (max-width: 390px) {
+  .cover__image_text {
+    font-family: "Bai Jamjuree";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .cover__toptext {
   top: 0px;
   right: 0px;
   width: 45%;
   text-transform: uppercase;
 }
+@media (max-width: 390px) {
+  .cover__toptext {
+    width: 60%;
+  }
+}
 .cover__bottomtext {
   bottom: 0px;
   left: 0px;
   width: 55%;
+}
+@media (max-width: 390px) {
+  .cover__bottomtext {
+    width: 60%;
+  }
 }
 
 /* --- down button --- */
@@ -427,11 +475,16 @@ body {
 }
 @media (max-width: 768px) {
   .advantages__item {
-    flex-grow: 1;
     flex-basis: 50%;
-    padding: 24px;
     min-width: 314px;
     max-width: 314px;
+  }
+}
+@media (max-width: 390px) {
+  .advantages__item {
+    flex-basis: 50%;
+    min-width: 265px;
+    max-width: 265px;
   }
 }
 .advantages__title {
@@ -445,9 +498,6 @@ body {
 }
 .advantages__description {
   margin-top: 64px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #808080;
@@ -563,6 +613,11 @@ body {
     gap: 80px;
   }
 }
+@media (max-width: 390px) {
+  .services__active_service {
+    padding: 0px;
+  }
+}
 .active_service__image {
   width: 100%;
 }
@@ -576,8 +631,6 @@ body {
 .active_service__description {
 }
 .active_service__name {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -585,8 +638,6 @@ body {
   padding-top: 5px;
 }
 .active_service__short_description {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -594,22 +645,15 @@ body {
   padding-top: 5px;
 }
 .active_service__long_description {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 140%;
   color: #808080;
   padding-top: 5px;
 }
-
 .active_service__frequent_breakage {
   margin-top: 40px;
 }
 .frequent_breakage_list__title {
   margin-bottom: 20px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -620,8 +664,18 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.active_service__frequent_breakage_row {
-  display: flex;
+@media (max-width: 390px) {
+  .active_service__frequent_breakage_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .active_service__frequent_breakage_row {
+    display: flex;
+  }
+  .frequent_breakage_list__item {
+    display: flex;
+    gap: 20px;
+  }
 }
 .frequent_breakage_list__item {
   display: flex;
@@ -800,11 +854,21 @@ body {
   background: #f2f2f2;
   border-radius: 24px;
 }
+@media (max-width: 768px) {
+  .prices__list {
+    padding: 0px;
+  }
+}
 .prices__item {
   display: flex;
   align-items: center;
   padding: 32px;
   border-bottom: 1px solid #d9d9d9;
+}
+@media (max-width: 390px) {
+  .prices__item {
+    padding: 16px;
+  }
 }
 .prices__item_header {
   display: flex;
@@ -898,6 +962,12 @@ body {
     max-width: 314px;
   }
 }
+@media (max-width: 390px) {
+  .frequent_breakdowns__item {
+    min-width: 265px;
+    max-width: 265px;
+  }
+}
 .frequent_breakdowns__name {
   margin-top: 16px;
   font-weight: 600;
@@ -924,6 +994,11 @@ body {
   padding: 80px 0px;
   gap: 8px;
 }
+@media (max-width: 390px) {
+  .testimonials {
+    padding: 32px 24px;
+  }
+}
 .bg-dark {
   background: #494450;
   border-radius: 24px;
@@ -944,10 +1019,22 @@ body {
     width: 488px;
   }
 }
+@media (max-width: 390px) {
+  .testimonials__body {
+    width: 310px;
+  }
+}
 .testimonials__title {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+@media (max-width: 390px) {
+  .testimonials__name {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+  }
 }
 .testimonials__description {
   line-height: 140%;
@@ -965,6 +1052,12 @@ body {
   gap: 64px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
+}
+@media (max-width: 390px) {
+  .testimonials__testimonial {
+    padding: 24px;
+    gap: 32px;
+  }
 }
 .testimonial__text {
   font-size: 20px;
@@ -1116,6 +1209,36 @@ body {
     grid-row: 4 / 5;
   }
 }
+@media (max-width: 390px) {
+  .gallery__photos {
+    grid-template-columns: repeat(2, 171px);
+    grid-template-rows: repeat(4, 200px);
+    gap: 18px;
+  }
+  .gallery__photo {
+    border-radius: 16px;
+  }
+  .gallery__photo1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .gallery__photo2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+  .gallery__photo3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+  .gallery__photo4 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .gallery__photo5 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+}
 
 /* --- gallery --- */
 .contacts {
@@ -1129,6 +1252,13 @@ body {
   .contacts {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 390px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
   }
 }
 .contacts__map {
@@ -1148,7 +1278,6 @@ body {
     min-height: 300px;
   }
 }
-
 .contacts__body {
   display: flex;
   flex-direction: column;
@@ -1162,6 +1291,11 @@ body {
 @media (max-width: 768px) {
   .section-name-lg {
     font-size: 64px;
+  }
+}
+@media (max-width: 390px) {
+  .section-name-lg {
+    font-size: 48px;
   }
 }
 .contacts__contact {
@@ -1226,6 +1360,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 24px;
   }
 }
 .footer__info {
@@ -1311,6 +1453,11 @@ body {
   background: #e4e4e4;
   border-radius: 24px;
 }
+@media (max-width: 768px) {
+  .footer__coworking {
+    gap: 141px;
+  }
+}
 .coworking__logo {
   width: 111px;
   height: 31px;
@@ -1343,7 +1490,7 @@ body {
   }
 }
 
-/* --- should override --- */
+/* --- should be in the end to override --- */
 .hidden {
   display: none;
 }
