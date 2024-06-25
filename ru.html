@@ -6,11 +6,11 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap&subset=cyrillic-ext"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=cyrillic,cyrillic-ext"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap&subset=cyrillic-ext"
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap&subset=cyrillic,cyrillic-ext"
     />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -26,32 +26,45 @@
             </div>
             <nav class="header__menu hidden-sm">
               <ul class="menu__list">
-                <li class="btn btn-red item_selected">
-                  <a href="#services" class="menu__link">Услуги</a>
+                <li>
+                  <a href="#services" class="menu__link btn btn-grey">
+                    Услуги
+                  </a>
                 </li>
-                <li class="btn btn-grey">
-                  <a href="#about_us" class="menu__link">О&nbsp;нас</a>
+                <li>
+                  <a href="#about_us" class="menu__link btn btn-grey">
+                    О&nbsp;нас
+                  </a>
                 </li>
-                <li class="btn btn-grey">
-                  <a href="#prices" class="menu__link">Цены</a>
+                <li>
+                  <a href="#prices" class="menu__link btn btn-grey"> Цены </a>
                 </li>
-                <li class="btn btn-grey">
-                  <a href="#breakdowns" class="menu__link">Поломки</a>
+                <li>
+                  <a href="#breakdowns" class="menu__link btn btn-grey">
+                    Поломки
+                  </a>
                 </li>
-                <li class="btn btn-grey">
-                  <a href="#testimonials" class="menu__link">Отзывы</a>
+                <li>
+                  <a href="#testimonials" class="menu__link btn btn-grey">
+                    Отзывы
+                  </a>
                 </li>
-                <li class="btn btn-grey">
-                  <a href="#contacts" class="menu__link">Контакты</a>
+                <li>
+                  <a href="#contacts" class="menu__link btn btn-grey">
+                    Контакты
+                  </a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="header__right">
-            <div class="button__list hidden-sm">
-              <div class="button__item">
-                <div class="button__button">RU</div>
-              </div>
+            <div class="button__button hidden-sm">
+              Rus
+              <ul class="button__dropdown hidden">
+                <li><a href="index.html">En</a></li>
+                <li><a href="ru.html">Rus</a></li>
+                <li><a href="ge.html">Geo</a></li>
+              </ul>
             </div>
             <div class="burger_menu sm-hidden">
               <img src="img/icon-burger.svg" alt="menu" />
@@ -72,9 +85,9 @@
                   Наши специалисты обеспечат оптимальную работу ваших устройств
                   с точностью и аккуратностью
                 </p>
-                <button class="btn mt-50 btn-rac hidden-sm">
+                <a href="#contacts" class="btn mt-50 btn-rac hidden-sm">
                   Заказать звонок
-                </button>
+                </a>
                 <button class="btn btn-round btn-cta sm-hidden">
                   <img src="img/icon-call.svg" alt="" />
                 </button>
@@ -83,7 +96,7 @@
           </div>
           <ul class="text__contacts mt-100 hidden-sm">
             <li>
-              <a href="#" class="contacts__item">
+              <a href="mailto:example@gmail.com" class="contacts__item">
                 <img
                   src="img/contacts_icons/mail.svg"
                   alt="email"
@@ -92,7 +105,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="contacts__item">
+              <a href="tel:+995555673212" class="contacts__item">
                 <img
                   src="img/contacts_icons/phone.svg"
                   alt="phone"
@@ -101,7 +114,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="contacts__item">
+              <a href="https://t.me/eneik_group" class="contacts__item">
                 <img
                   src="img/contacts_icons/telegram.svg"
                   alt="telegram"
@@ -124,14 +137,27 @@
         <div class="cover__image">
           <img src="img/cover.png" alt="cover image" />
           <p class="cover__image_text cover__toptext">Лучший сервис</p>
-          <p class="cover__image_text cover__bottomtext">
-            33 Jacob Gogebashvili
-          </p>
+          <a
+            href="#contacts"
+            class="cover__image_text cover__bottomtext btn btn-grey"
+          >
+            33 Я.Гогебашвили, Кутаиси, Грузия
+          </a>
         </div>
       </section>
 
-      <div class="down__button _container mt-50">
+      <div
+        class="down__button _container mt-50 scroll-button"
+        data-target="#services"
+      >
         <img src="img/arrow-down.svg" alt="scroll down" />
+      </div>
+
+      <div
+        class="down__button scroll-button scroll-up hidden"
+        data-target="top"
+      >
+        <img class="invert-color" src="img/arrow-up.svg" alt="scroll up" />
       </div>
 
       <div class="advantages _container overflow-x">
@@ -139,25 +165,25 @@
           <li class="advantages__item">
             <p class="advantages__title">24 часа</p>
             <p class="advantages__description">
-              основной ремонт занимает около 24 часов
+              основной ремонт<br />занимает около 24 часов
             </p>
           </li>
           <li class="advantages__item">
             <p class="advantages__title">Бесплатно</p>
             <p class="advantages__description">
-              бесплатная диагностика до ремонтных работ
+              бесплатная диагностика<br />до ремонтных работ
             </p>
           </li>
           <li class="advantages__item">
             <p class="advantages__title">90 дней</p>
             <p class="advantages__description">
-              90-дневная гарантия ради вашего спокойствия
+              90-дневная гарантия<br />ради вашего спокойствия
             </p>
           </li>
           <li class="advantages__item">
             <p class="advantages__title">Качество</p>
             <p class="advantages__description">
-              только высококачественные детали на любой ремонт
+              только высококачественные детали<br />на любой ремонт
             </p>
           </li>
         </ul>
@@ -168,7 +194,7 @@
         <div class="services__body">
           <ul class="services__list">
             <li>
-              <a href="#" class="services__service">
+              <div class="services__service" data-service="prevention">
                 <img
                   src="img/services/prevention.png"
                   alt="prevention"
@@ -184,10 +210,13 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="services__service selected_service">
+              <div
+                class="services__service selected_service"
+                data-service="pc-laptops"
+              >
                 <img
                   src="img/services/pc_laptiops.png"
                   alt="pc and laptops"
@@ -195,7 +224,9 @@
                 />
                 <div class="service__title">
                   <div class="service__title_name">ПК и ноутбуки</div>
-                  <div class="service__arrow_container_active">
+                  <div
+                    class="service__arrow_container service__arrow_container_active"
+                  >
                     <img
                       src="img/arrow-right.svg"
                       alt="pc and laptops link"
@@ -203,7 +234,7 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
 
             <li class="grid-2c sm-hidden">
@@ -309,7 +340,7 @@
             </li>
 
             <li>
-              <a href="#" class="services__service">
+              <div class="services__service" data-service="phones">
                 <img
                   src="img/services/phones.png"
                   alt="phones"
@@ -325,10 +356,10 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="services__service">
+              <div class="services__service" data-service="tablets">
                 <img
                   src="img/services/tablets.png"
                   alt="tablets"
@@ -344,10 +375,10 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="services__service">
+              <div class="services__service" data-service="gaming-consoles">
                 <img
                   src="img/services/consoles.png"
                   alt="gaming consoles"
@@ -363,10 +394,10 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="services__service">
+              <div class="services__service" data-service="office-equipment">
                 <img
                   src="img/services/office.png"
                   alt="office equipment"
@@ -382,10 +413,10 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="services__service">
+              <div class="services__service" data-service="monitors">
                 <img
                   src="img/services/monitors.png"
                   alt="monitors"
@@ -401,10 +432,10 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="services__service">
+              <div class="services__service" data-service="headphones">
                 <img
                   src="img/services/headphones.png"
                   alt="headphones"
@@ -420,11 +451,11 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
 
-          <div class="services__active_service hidden-sm">
+          <div id="service-details" class="services__active_service hidden-sm">
             <img
               src="img/services/pc_laptiops_big.png"
               alt="pc and laptops"
@@ -510,7 +541,7 @@
                   type="text"
                   class="call_to_action__phone"
                   name="phone"
-                  placeholder="Your phone number"
+                  placeholder="Ваш номер телефона"
                 />
                 <button class="services__cta_button btn btn-red">
                   Заказать звонок
@@ -633,7 +664,7 @@
         <div class="prices__header">
           <div class="prices__title">
             <h2 class="section-name">Цены на услуги</h2>
-            <button class="btn btn-red hidden-xs">Заказать звонок</button>
+            <button class="btn btn-red hidden-sm">Заказать звонок</button>
           </div>
         </div>
 
@@ -650,12 +681,60 @@
                 <img src="img/chevron-down.svg" alt="" />
               </div>
             </div>
-            <div class="prices__item_text hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam debitis, suscipit atque, autem optio fuga eius non
-              velit nam aliquam sint libero nemo! Mollitia aut illum velit
-              facere, voluptatem minus.
-            </div>
+            <ul class="prices_items_list hidden">
+              <li class="prices__item_text">
+                <p class="price_name">Diagnostics and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Virus and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">
+                  Operating System Installation/Reinstallation
+                </p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Data Recovery Services</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hardware Repair/Replacement</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Screen Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Keyboard Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hard Drive/SSD Installation</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Memory (RAM) Upgrade</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Software Installation/Update</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+            </ul>
           </li>
           <li class="prices__item">
             <div class="prices__item_header">
@@ -663,18 +742,66 @@
                 <div class="prices__item_icon">
                   <img src="img/icon-phones.svg" alt="phones" />
                 </div>
-                <p class="prices__item_name name">Телефоны</p>
+                <p class="prices__item_name name">Phones</p>
               </div>
               <div class="prices_item_arrow">
                 <img src="img/chevron-down.svg" alt="" />
               </div>
             </div>
-            <div class="prices__item_text hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam debitis, suscipit atque, autem optio fuga eius non
-              velit nam aliquam sint libero nemo! Mollitia aut illum velit
-              facere, voluptatem minus.
-            </div>
+            <ul class="prices_items_list hidden">
+              <li class="prices__item_text">
+                <p class="price_name">Diagnostics and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Virus and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">
+                  Operating System Installation/Reinstallation
+                </p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Data Recovery Services</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hardware Repair/Replacement</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Screen Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Keyboard Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hard Drive/SSD Installation</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Memory (RAM) Upgrade</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Software Installation/Update</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+            </ul>
           </li>
           <li class="prices__item">
             <div class="prices__item_header">
@@ -682,18 +809,66 @@
                 <div class="prices__item_icon">
                   <img src="img/icon-tablet.svg" alt="tablets" />
                 </div>
-                <p class="prices__item_name name">Планшеты</p>
+                <p class="prices__item_name name">Tablets</p>
               </div>
               <div class="prices_item_arrow">
                 <img src="img/chevron-down.svg" alt="" />
               </div>
             </div>
-            <div class="prices__item_text hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam debitis, suscipit atque, autem optio fuga eius non
-              velit nam aliquam sint libero nemo! Mollitia aut illum velit
-              facere, voluptatem minus.
-            </div>
+            <ul class="prices_items_list hidden">
+              <li class="prices__item_text">
+                <p class="price_name">Diagnostics and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Virus and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">
+                  Operating System Installation/Reinstallation
+                </p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Data Recovery Services</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hardware Repair/Replacement</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Screen Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Keyboard Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hard Drive/SSD Installation</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Memory (RAM) Upgrade</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Software Installation/Update</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+            </ul>
           </li>
           <li class="prices__item">
             <div class="prices__item_header">
@@ -701,18 +876,66 @@
                 <div class="prices__item_icon">
                   <img src="img/icon-monitor.svg" alt="monitors" />
                 </div>
-                <p class="prices__item_name name">Мониторы</p>
+                <p class="prices__item_name name">Monitors</p>
               </div>
               <div class="prices_item_arrow">
                 <img src="img/chevron-down.svg" alt="" />
               </div>
             </div>
-            <div class="prices__item_text hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam debitis, suscipit atque, autem optio fuga eius non
-              velit nam aliquam sint libero nemo! Mollitia aut illum velit
-              facere, voluptatem minus.
-            </div>
+            <ul class="prices_items_list hidden">
+              <li class="prices__item_text">
+                <p class="price_name">Diagnostics and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Virus and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">
+                  Operating System Installation/Reinstallation
+                </p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Data Recovery Services</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hardware Repair/Replacement</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Screen Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Keyboard Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hard Drive/SSD Installation</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Memory (RAM) Upgrade</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Software Installation/Update</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+            </ul>
           </li>
           <li class="prices__item">
             <div class="prices__item_header">
@@ -720,24 +943,72 @@
                 <div class="prices__item_icon">
                   <img src="img/icon-headphones.svg" alt="headphones" />
                 </div>
-                <p class="prices__item_name name">Наушники</p>
+                <p class="prices__item_name name">Headphones</p>
               </div>
               <div class="prices_item_arrow">
                 <img src="img/chevron-down.svg" alt="" />
               </div>
             </div>
-            <div class="prices__item_text hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam debitis, suscipit atque, autem optio fuga eius non
-              velit nam aliquam sint libero nemo! Mollitia aut illum velit
-              facere, voluptatem minus.
-            </div>
+            <ul class="prices_items_list hidden">
+              <li class="prices__item_text">
+                <p class="price_name">Diagnostics and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Virus and Troubleshooting</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">
+                  Operating System Installation/Reinstallation
+                </p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Data Recovery Services</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hardware Repair/Replacement</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Screen Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Keyboard Replacement (Laptop)</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Hard Drive/SSD Installation</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Memory (RAM) Upgrade</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+              <li class="prices__item_text">
+                <p class="price_name">Software Installation/Update</p>
+                <p class="price_divider"></p>
+                <p class="price_value">50 GEL</p>
+              </li>
+            </ul>
           </li>
         </ul>
 
-        <div class="prices__more down__button">
+        <!-- <div class="prices__more down__button">
           <img src="img/arrow-down.svg" alt="scroll down" />
-        </div>
+        </div> -->
       </section>
 
       <section
@@ -747,20 +1018,34 @@
         <div class="frequent_breakdowns__header">
           <h2 class="section-name">Частые поломки</h2>
           <ul class="frequent_breakdowns__tabs hidden-sm">
-            <li class="btn btn-small">Телефоны</li>
-            <li class="btn btn-small btn-dark">Компьютеры</li>
-            <li class="btn btn-small">Планшеты</li>
-            <li class="btn btn-small">Игровые консоли</li>
-            <li class="btn btn-small">Офисное оборудование</li>
-            <li class="btn btn-small">Мониторы</li>
+            <li class="btn btn-small" data-category="phones">Телефоны</li>
+            <li class="btn btn-small" data-category="laptops">Компьютеры</li>
+            <li class="btn btn-small" data-category="tablets">Планшеты</li>
+            <li class="btn btn-small" data-category="gaming-consoles">
+              Игровые консоли
+            </li>
+            <li class="btn btn-small" data-category="office-equipment">
+              Офисное оборудование
+            </li>
+            <li class="btn btn-small" data-category="monitors">Мониторы</li>
           </ul>
-          <div class="frequent_breakdowns__select sm-hidden">
-            <p class="frequent_breakdowns__option">Компьютеры</p>
-            <img src="img/chevron-down.svg" alt="" />
+          <div class="chev">
+            <select
+              id="breakdownCategorySelect"
+              class="frequent_breakdowns__select sm-hidden"
+            >
+              <option value="phones">Телефоны</option>
+              <option value="laptops">Компьютеры</option>
+              <option value="tablets">Планшеты</option>
+              <option value="gaming-consoles">Игровые консоли</option>
+              <option value="office-equipment">Офисная техника</option>
+              <option value="monitors">Мониторы</option>
+              <!-- <img src="img/chevron-down.svg" alt="Dropdown Arrow" class="chev"/> -->
+            </select>
           </div>
         </div>
         <ul class="frequent_breakdowns__list">
-          <li class="frequent_breakdowns__item">
+          <li class="frequent_breakdowns__item category-phones">
             <div class="icon icon-grey">
               <img src="img/icon-sleep.svg" alt="slow performance" />
             </div>
@@ -771,7 +1056,7 @@
             </p>
             <p class="frequent_breakdowns__price">От 50 GEL</p>
           </li>
-          <li class="frequent_breakdowns__item">
+          <li class="frequent_breakdowns__item category-laptops">
             <div class="icon icon-grey">
               <img src="img/icon-drive.svg" alt="hard drives failures" />
             </div>
@@ -782,7 +1067,7 @@
             </p>
             <p class="frequent_breakdowns__price">От 70 GEL</p>
           </li>
-          <li class="frequent_breakdowns__item">
+          <li class="frequent_breakdowns__item category-tablets">
             <div class="icon icon-grey">
               <img src="img/icon-temp.svg" alt="Overheating issues" />
             </div>
@@ -793,7 +1078,7 @@
             </p>
             <p class="frequent_breakdowns__price">От 100 GEL</p>
           </li>
-          <li class="frequent_breakdowns__item">
+          <li class="frequent_breakdowns__item category-gaming-consoles">
             <div class="icon icon-grey">
               <img
                 src="img/icon-support-light.svg"
@@ -808,7 +1093,18 @@
             </p>
             <p class="frequent_breakdowns__price">От 50 GEL</p>
           </li>
-          <li class="frequent_breakdowns__item">
+          <li class="frequent_breakdowns__item category-office-equipment">
+            <div class="icon icon-grey">
+              <img src="img/icon-xmonitor.svg" alt="screen damage" />
+            </div>
+            <p class="frequent_breakdowns__name">Повреждения экрана</p>
+            <p class="frequent_breakdowns__description">
+              Треснувший, мерцающий или не реагирующий экран или проблемы с
+              подсветкой дисплея
+            </p>
+            <p class="frequent_breakdowns__price">От 50 GEL</p>
+          </li>
+          <li class="frequent_breakdowns__item category-monitors">
             <div class="icon icon-grey">
               <img src="img/icon-xmonitor.svg" alt="screen damage" />
             </div>
@@ -862,9 +1158,97 @@
                 </div>
               </div>
             </li>
+            <li class="testimonials__testimonial">
+              <p class="testimonial__text">
+                Сервисный центр Eneik спас меня, когда мой планшет перестал
+                работать прямо перед большой поездкой. Они быстро
+                диагностировали и исправили проблему, и их цены были очень
+                справедливыми. Я определенно вернусь для любого будущего
+                ремонта.
+              </p>
+              <div class="testimonial__footer">
+                <div class="testimonial__user">
+                  <div class="testimonial__user_avatar"></div>
+                  <p class="testimonial__user_name">Emily K.</p>
+                </div>
+                <div class="testimonial__rating">
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__testimonial">
+              <p class="testimonial__text">
+                Сервисный центр Eneik спас меня, когда мой планшет перестал
+                работать прямо перед большой поездкой. Они быстро
+                диагностировали и исправили проблему, и их цены были очень
+                справедливыми. Я определенно вернусь для любого будущего
+                ремонта.
+              </p>
+              <div class="testimonial__footer">
+                <div class="testimonial__user">
+                  <div class="testimonial__user_avatar"></div>
+                  <p class="testimonial__user_name">Emily K.</p>
+                </div>
+                <div class="testimonial__rating">
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__testimonial">
+              <p class="testimonial__text">
+                Сервисный центр Eneik спас меня, когда мой планшет перестал
+                работать прямо перед большой поездкой. Они быстро
+                диагностировали и исправили проблему, и их цены были очень
+                справедливыми. Я определенно вернусь для любого будущего
+                ремонта.
+              </p>
+              <div class="testimonial__footer">
+                <div class="testimonial__user">
+                  <div class="testimonial__user_avatar"></div>
+                  <p class="testimonial__user_name">Emily K.</p>
+                </div>
+                <div class="testimonial__rating">
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__testimonial">
+              <p class="testimonial__text">
+                Сервисный центр Eneik спас меня, когда мой планшет перестал
+                работать прямо перед большой поездкой. Они быстро
+                диагностировали и исправили проблему, и их цены были очень
+                справедливыми. Я определенно вернусь для любого будущего
+                ремонта.
+              </p>
+              <div class="testimonial__footer">
+                <div class="testimonial__user">
+                  <div class="testimonial__user_avatar"></div>
+                  <p class="testimonial__user_name">Emily K.</p>
+                </div>
+                <div class="testimonial__rating">
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                  <img src="img/icon-star-full.svg" alt="star" />
+                </div>
+              </div>
+            </li>
           </ul>
           <div class="testimonials__controls">
-            <div class="icon icon-dark">
+            <div class="icon icon-dark prev">
               <img src="img/icon-left.svg" alt="previous" />
             </div>
             <ul class="testimonials__navigation_list">
@@ -880,8 +1264,11 @@
               <li class="testimonials__navigation_item">
                 <img src="img/icon-circle.svg" alt="" />
               </li>
+              <li class="testimonials__navigation_item">
+                <img src="img/icon-circle.svg" alt="" />
+              </li>
             </ul>
-            <div class="icon icon-dark">
+            <div class="icon icon-dark next">
               <img src="img/Icon-right.svg" alt="next" />
             </div>
           </div>
@@ -894,11 +1281,21 @@
           <img src="img/Eneilk-light.svg" alt="Eneik logo" class="logo-sm" />
         </div>
         <ul class="gallery__photos">
-          <li class="gallery__photo1 gallery__photo"></li>
-          <li class="gallery__photo2 gallery__photo"></li>
-          <li class="gallery__photo3 gallery__photo"></li>
-          <li class="gallery__photo4 gallery__photo"></li>
-          <li class="gallery__photo5 gallery__photo"></li>
+          <li class="gallery__photo1 gallery__photo">
+            <img src="img/gallery/Img1.png" alt="" class="gallery__photo" />
+          </li>
+          <li class="gallery__photo2 gallery__photo">
+            <img src="img/gallery/Img2.png" alt="" class="gallery__photo" />
+          </li>
+          <li class="gallery__photo3 gallery__photo">
+            <img src="img/gallery/Img3.png" alt="" class="gallery__photo" />
+          </li>
+          <li class="gallery__photo4 gallery__photo">
+            <img src="img/gallery/Img4.png" alt="" class="gallery__photo" />
+          </li>
+          <li class="gallery__photo5 gallery__photo">
+            <img src="img/gallery/Img5.png" alt="" class="gallery__photo" />
+          </li>
         </ul>
       </section>
 
@@ -906,28 +1303,76 @@
         id="contacts"
         class="contacts _container mt-250 bg-dark font-light"
       >
-        <div class="contacts__map hidden-sm"></div>
+        <div class="contacts__map hidden-sm">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1476.2517154566313!2d42.7099051!3d42.2685607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c8dad59429d93%3A0x4e2007bf78520b6e!2sEneik%20Coworking!5e0!3m2!1sen!2s!4v1625244099084!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
         <div class="contacts__body">
           <h2 class="section-name section-name-lg font-light">Контакты</h2>
           <ul class="contacts__contact">
             <li class="contact">
               <p class="contact__text">Телефон</p>
-              <p class="contact__text--bold">+995 555 67-32-12</p>
+              <p class="contact__text--bold">
+                <a href="tel:+995555673212" class="contact__link">
+                  +995 555 67-32-12
+                </a>
+              </p>
             </li>
             <li class="contact">
               <p class="contact__text">Email</p>
-              <p class="contact__text--bold">example@gmail.com</p>
+              <p class="contact__text--bold">
+                <a href="mailto:example@gmail.com" class="contact__link">
+                  example@gmail.com
+                </a>
+              </p>
             </li>
             <li class="contact">
               <p class="contact__text">Адрес</p>
-              <p class="contact__text--bold">33 Jacob Gogebashvili Street</p>
+              <p class="contact__text--bold">
+                <a
+                  href="https://www.google.com/maps/place/Eneik+Coworking/@42.2685607,42.7099051,18.17z/data=!4m14!1m7!3m6!1s0x405c8dad59429d93:0x4e2007bf78520b6e!2sEneik+Coworking!8m2!3d42.2687462!4d42.7109431!16s%2Fg%2F11kb_tyfxy!3m5!1s0x405c8dad59429d93:0x4e2007bf78520b6e!8m2!3d42.2687462!4d42.7109431!16s%2Fg%2F11kb_tyfxy?entry=ttu"
+                  class="contact__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  33 Я.Гогебашвили, Кутаиси, Грузия
+                </a>
+              </p>
             </li>
             <li class="contact">
               <p class="contact__text">Telegram</p>
-              <p class="contact__text--bold">@Kutaisi_Eneik</p>
+              <p class="contact__text--bold">
+                <a
+                  href="https://t.me/eneik_group"
+                  class="contact__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @Kutaisi_Eneik
+                </a>
+              </p>
             </li>
           </ul>
-          <div class="contacts__map sm-hidden"></div>
+          <div class="contacts__map sm-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1476.2517154566313!2d42.7099051!3d42.2685607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c8dad59429d93%3A0x4e2007bf78520b6e!2sEneik%20Coworking!5e0!3m2!1sen!2s!4v1625244099084!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
           <form class="contacts__cta_form" action="#">
             <p>Нужна ли вам помощь?</p>
             <p>
@@ -965,7 +1410,7 @@
             </div>
             <ul class="text__contacts hidden-sm">
               <li>
-                <a href="#" class="icon icon-grey">
+                <a href="example@gmail.com" class="icon icon-grey">
                   <img
                     src="img/contacts_icons/mail-light.svg"
                     alt="email"
@@ -974,7 +1419,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="icon icon-grey">
+                <a href="tel:+995555673212" class="icon icon-grey">
                   <img
                     src="img/contacts_icons/phone-light.svg"
                     alt="phone"
@@ -983,7 +1428,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="icon icon-grey">
+                <a href="https://t.me/eneik_group" class="icon icon-grey">
                   <img
                     src="img/contacts_icons/telegram-ligth.svg"
                     alt="telegram"
@@ -1006,37 +1451,49 @@
         </div>
 
         <ul class="footer__languages sm-hidden">
-          <li class="btn btn-grey btn-lang">En</li>
-          <li class="btn btn-dark btn-lang">Rus</li>
-          <li class="btn btn-grey btn-lang">Geo</li>
+          <li class="btn-lang">
+            <a href="index.html" class="btn btn-grey btn-lang">En</a>
+          </li>
+          <li class="btn-lang">
+            <a href="ru.html" class="btn btn-dark btn-lang">Rus</a>
+          </li>
+          <li class="btn-lang">
+            <a href="ge.html" class="btn btn-grey btn-lang">Geo</a>
+          </li>
         </ul>
 
         <div class="footer__menu">
           <ul class="footer__navigation">
             <li class="footer__navigation_item">
-              <a class="menu__link" href="#services">Услуги</a>
+              <a href="#services">Услуги</a>
             </li>
             <li class="footer__navigation_item">
-              <a class="menu__link" href="#about_us">О нас</a>
+              <a href="#about_us">О нас</a>
             </li>
             <li class="footer__navigation_item">
-              <a class="menu__link" href="#prices">Цены</a>
+              <a href="#prices">Цены</a>
             </li>
             <li class="footer__navigation_item">
-              <a class="menu__link" href="#breakdowns">Поломки</a>
+              <a href="#breakdowns">Поломки</a>
             </li>
             <li class="footer__navigation_item">
-              <a class="menu__link" href="#testimonials">Отзывы</a>
+              <a href="#testimonials">Отзывы</a>
             </li>
             <li class="footer__navigation_item">
-              <a class="menu__link" href="#contacts">Контакты</a>
+              <a href="#contacts">Контакты</a>
             </li>
           </ul>
           <div class="footer__lang_and_link hidden-sm">
             <ul class="footer__languages">
-              <li class="btn btn-grey btn-lang">En</li>
-              <li class="btn btn-dark btn-lang">Rus</li>
-              <li class="btn btn-grey btn-lang">Geo</li>
+              <li class="btn-lang">
+                <a href="index.html" class="btn btn-grey btn-lang">En</a>
+              </li>
+              <li class="btn-lang">
+                <a href="ru.html" class="btn btn-dark btn-lang">Rus</a>
+              </li>
+              <li class="btn-lang">
+                <a href="ge.html" class="btn btn-grey btn-lang">Geo</a>
+              </li>
             </ul>
             <div class="footer__coworking">
               <img class="coworking__logo" src="img/cowoking_logo.png" alt="" />
@@ -1052,7 +1509,7 @@
         <div class="footer__lang_and_link sm-hidden">
           <div class="footer__coworking">
             <img class="coworking__logo" src="img/cowoking_logo.png" alt="" />
-            <a href="" class="coworking__link">
+            <a href="https://eneik.ge" class="coworking__link">
               <p class="coworking__text">Взгляните на наш коворкинг!/p></p>
 
               <div class="btn btn-round btn-dark">
@@ -1064,5 +1521,7 @@
         <p class="copyright sm-hidden">@2024. All rights reserved</p>
       </footer>
     </div>
+    <script src="script.js"></script>
+    <script src="main-ru.js"></script>
   </body>
 </html>
