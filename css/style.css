@@ -156,6 +156,9 @@ body {
   background-color: #fe2d29;
   font-weight: 600;
 }
+.btn-red:hover {
+  background-color: #444;
+}
 .btn-cta {
   color: #fff;
   background-color: #fe2d29;
@@ -311,19 +314,24 @@ body {
   list-style: none;
   padding: 8px;
   text-align: center;
+  color: #444
 }
 
 .button__dropdown li a {
+  display: block;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
-  color: #333;
+  color: inherit;
 }
 
 .button__dropdown li:hover {
   background-color: #444;
+  color: #fff
 }
 
 .button__dropdown li a:hover {
-  color: #fff;
+  color: #fff
 }
 
 .button__dropdown.hidden {
@@ -625,8 +633,7 @@ body {
 }
 .services__service:hover {
   cursor: pointer;
-  background: #444;
-  color: #fff;
+  background: #e4e4e4;
 }
 @media (max-width: 1440px) {
   .services__service {
@@ -1617,6 +1624,11 @@ body {
   height: 28px;
   font-size: 20px;
   line-height: 140%;
+}
+.footer__navigation_item a {
+  font-size: 20px;
+  line-height: 140%;
+  color: #444;
 }
 .footer__lang_and_link {
   width: 340px;
